@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6758f217f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./res.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Du Lịch</title>
+</head>
+<body>
+    <div hidden class="container-weather">
+        <div class="container-weather-box">
+            <div class="main-section">
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố...">
+                </div>
+                <div class="info-wrapper">
+                    <p class="city-name">--</p>
+                    <p class="weather-state">--</p>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+                    <p class="temperature">--</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="btn-weather" class="btn-weather"><i class="fa-solid fa-cloud fa-2x"></i>
+    </div>
+    
+        <div class="header_top">
+            <i id="icon" class="icon fa-solid fa-bars"></i>
+            <div class="header_top_container"></div>
+            <ul>
+                <li onclick="handleGoHome()"><a href="./index.html">HOME</a></li>
+                <li><a href="">CATEGORY</a></li>
+                <li><a href="./colection-html/colection.html">ABOUT US</a></li>
+                <li><a href="./contact-html/contact.html">CONTACT</a></li>
+                <li><a href="./review-html/review.html">REVIEW</a></li>
+            </ul>
+            <label for="nav__mobile-input" class="nav__mobile-close">
+                <i class="icon_close fa-solid fa-xmark"></i>
+            </label>
+        
+        </div>
+    
+            <div class="container-web">
+        
+            <header>
+            
+            <div class="img_container">
+                <div class="img_container_content">
+                    <h2>Phong Nha Company</h2>
+                    <p>Đẳng Cấp Lên Ngôi, Hết Mình Tuổi Trẻ,Niềm Vui Ngóng Chờ Giây Phút Mộng Mơ</p>
+                    <button id="img_container_content_btn" class="btn">Khám Phá</button>
+                    
+                </div>
+            </div>
+            <div hidden id="hearder_content" class="hearder_content">
+                <h2>KHÁM PHÁ</h2>
+                <h4>Xách Balo Lên Và Đi Thôi Nào</h3>
+                <form action="">
+                    <h2> Bạn Muốn Đi Đâu Nè</h2>
+                    <p>Địa Điểm</p>
+                    <select name="" id="">
+                        <option value="">----Chọn Địa Điểm----</option>
+                    </select>
+                    <p>Số Người</p>
+                    <input type="number" min ="1" placeholder="Bạn Đi Bao Nhiêu Người">
+                    <p>Ngày Đi</p>
+                    <input type="text" name="" id="">
+                    <p>Ngày Đi</p>
+                    <input type="text">
+                    <button>Tìm Kiếm</button>
+                </form>
+            </div>
+        </header>
+    
+    
+        <section class="weather">
+            <button>
+                <i class="fa-light fa-sun-cloud"></i>
+            </button>
+        </section>
+        <div class="home-page">
+            <section  class="nice-place">
+                <div class="container">
+                    <h2>Địa Điểm Nổi Bật</h2> 
+                    <div class="nice-place-content row">
+                    </div>
+                    <h2>Hơn 10 Năm Duy Trì Và Phát Triển</h2>
+                </div>
+            </section>
+            <section  class="about">
+                <div class="container">
+                    <h2>About</h2>
+                    <div class="about-content row ">
+                        <div class="about-content-left">
+                            <img src="./image/about.jpg" alt="">
+                        </div>
+                        <div class="about-content-right">
+                            <h3>Tại Sao Bạn Nên Chọn Chúng Tôi</h3>
+                            <p>Chúng tôi là công ty hàng đầu về cung cấp dịch vụ lữ hành nội địa và quốc tế-----------------------</p>
+                            <button> <a href="./index 2/index2.html">Tìm Hiểu Thêm</a></button>
+                        </div>
+                    </div>
+        
+                </div>
+            </section>
+            <div class="service row">
+                <div class="service-item">
+                    <img src="./image/hotel.png" alt="">
+                    <p>Đặt Phòng</p>
+                </div>
+                <div class="service-item">
+                    <img src="./image/hotro.png" alt="">
+                    <p>Hỗ Trợ</p>
+                </div>
+                <div class="service-item">
+                    <img src="./image/doc.png" alt="">
+                    <p>Chăm Sóc</p>
+                </div>
+            </div>
+            <!----------- Top Place------ -->
+            <div  class="top-place-tour">
+                <div class="top-place-tour-title">
+                    <h2>Top Attractions Destinations</h2>
+                    <span></span>
+                </div>
+                <div class="top-place-tour-famous">
+                    <div class="top-place-tour-img">
+                        <figure class="effect-form">
+                            <img src="./image/hn.jpg" alt="">
+                            <figcaption>
+                                <h2> Tour <span>Hà Nội </span> </h2>
+                                <p>6 tours</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="top-place-tour-img">
+                        <figure class="effect-form">
+                            <img src="./image/dn.jpg" alt="">
+                            <figcaption>
+                                <h2> Tour <span>Đà Nẵng </span> </h2>
+                                <p>6 tours</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="top-place-tour-img">
+                        <figure class="effect-form">
+                            <img src="./image/hue.jpg" alt="">
+                            <figcaption>
+                                <h2> Tour <span>HUE </span> </h2>
+                                <p>5+ tours</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="top-place-tour-img">
+                        <figure class="effect-form">
+                            <img src="./image/pq.jpg" alt="">
+                            <figcaption>
+                                <h2>Tour <span>Phú Quốc </span> </h2>
+                                <p>3 tours</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="top-place-tour-img">
+                        <figure class="effect-form">
+                            <img src="./image/dl.jpg" alt="">
+                            <figcaption>
+                                <h2> Tour <span>Đà Lạt </span> </h2>
+                                <p>2+ tours</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- -----BOOKINGGGGG----- -->
+    <section   class="booking">
+        <div class="booking-container-left">
+            <h2>Đặt Vé Tour Tp <span class="name-tour"></span></h2>
+            <div class="booking-content-img">
+                <img src="https://www.vietnambooking.com/wp-content/uploads/2019/05/tour-quy-nhon-phu-yen-3n2d-15.jpg" alt="">
+                <div class="booking-content-btn-slider">
+                    <button></button><button></button><button></button><button></button>
+                </div>
+            </div>
+            <div class="booking-content-tour">
+                <div class="booking-content-tour-infor">
+                    <tbody>
+                        <tr> 
+                            <span class=" booking-content-tour-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span class="name-tour"></span>
+                            </span>
+                            <span class=" booking-content-tour-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span class="total_day"></span>
+                            </span>
+                            <span class=" booking-content-tour-item">
+                                <i class="fa-solid fa-car"></i>
+                                <span class="vehicle"></span>
+                            </span>
+                            <span class=" booking-content-tour-item">
+                                Mã Tour <span>HUY070802</span>
+                            </span>
+                            <span class="booking-content-tour-item">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                Khởi Hành: 
+                                <span class="departure_day"></span>
+                           </span>
+                        </tr>
+                    </tbody>
+                </div>
+            </div>
+            <div class="booking-content-service">
+                <h2>Các Dịch Vụ Được Bao Gồm</h2>
+                <ul class="booking-content-service-list">
+                    <li><i class="fa-solid fa-check"></i>Bảo Hiểm</li>
+                    <li><i class="fa-solid fa-flag"></i>Hướng Dẫn Viên</li>
+                    <li><i class="fa-solid fa-ticket"></i></i>Vé Tham Quan</li>
+                    <li><i class="fa-solid fa-car"></i>Xe Đưa Đón</li>
+                </ul>
+            </div>
+            <div class="booking-content-benefit">
+                <p><span>Tour.........</span> với hành trình thú vị đưa du khách đến với thành phố biển xinh đẹp cùng những kỳ quan cực ký hấp dẫn. Chương trình tour ấn tượng, giá tiết kiệm duy nhất chỉ có ở Vietnam Booking.</p>
+                <p><span>ĐIỂM HẤP DẪN NHẤT:</span></p>
+                <ul>
+                    <li>Khám phá khu du lịch Ghềnh Đá Đĩa, Tháp Đôi, nhà thờ Mằng Lăng,...</li>
+                    <li>Du ngoạn xứ hoa vàng cỏ xanh với Bãi Xép, đầm Ô Loan,...</li>
+                    <li>Thỏa sức vui chơi tại KDL biển Kỳ Co - bãi biển đẹp nhất Quy Nhơn</li>
+                    <li>Thưởng thức ẩm thực địa phương độc đáo</li>
+                </ul>
+                <p>Tour Quy Nhơn <span class="total_day"></span> từ TPHCM khởi hành hàng ngày. Nhanh tay liên hệ: <span><a href="tel:0388173342">0388173342</a></span></p>
+            </div>
+            <div class="booking-content-desciption">
+                <div class="booking-content-desciption-header">
+                    <h2>CHƯƠNG TRÌNH TOUR</h2>
+                </div>
+                <div class="booking-content-desciption-list">
+                    <div class="list-description">
+                        <div class="list-description-title">
+                            <h3>NGÀY 1: TOUR KHÁM PHÁ <span class="name-tour"></span></h3>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <i style="display: none;" class="fa-solid fa-angle-up"></i>
+                        </div>
+                        <div  class="list-description-content">
+                        </div>
+                    </div>
+                    <div class="list-description">
+                        <div class="list-description-title">
+                            <h3>NGÀY 2: TOUR KHÁM PHÁ <span class="name-tour"></span></h3>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <i style="display: none;" class="fa-solid fa-angle-up"></i>
+                        </div>
+                        <div class="list-description-content">
+                        </div>
+                    </div>
+                    <div class="list-description">
+                        <div class="list-description-title">
+                            <h3>NGÀY 3: TOUR KHÁM PHÁ <span class="name-tour"></span></h3>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <i style="display: none;" class="fa-solid fa-angle-up"></i>
+                        </div>
+                        <div class="list-description-content">
+
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="booking-container-right">
+                <div class="booking-container-right-group">
+                    <div class="booking-container-right-form">
+                        <form action="">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span class="price-tour">
+                                            <div class="price-tour-old">
+                                                <del></del> VNĐ
+                                            </div>
+                                        </span>
+                                        <span class="new_price"></span>
+                                         VNĐ/1ng
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Khởi Hành</label>  
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="......"> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Số Lượng KHách</label>  
+                                    </td>
+                                    <td>
+                                    <select name="" id="">
+                                        <option value="1">1 người</option>
+                                        <option value="2">2 người</option>
+                                        <option value="3">3 người</option>
+                                        <option value="4">4 người</option>
+                                        <option value="5">5 người</option>
+                                        <option value="6">Trên 5 người</option>
+                                    </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button>Đặt Tour</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class='sidebar-box-item'>
+                        <h3>TỔNG ĐÀI TƯ VẤN</h3>
+                        <div class='sidebar-box-content sidebar-hotline'>
+                            <label>Mọi thắc mắc của Quý khách</label>
+                                
+                            vui lòng gọi:<a href="tel:19003398">0388173342</a>
+                            
+                            <span class='span-note'>Chúng tôi hỗ trợ 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- review section start -->
+        <div class="review-container">
+            <h2>Reviewer</h2>
+            <section class="review">
+    
+                <div class="box">
+                    <div class="user">
+                        <img src="./image/Hinh-anh-gai-xinh-My.jpg" alt="">
+                        <div class="info">
+                            <h2>edward bey</h2>
+                            <span>happ client</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temor 
+                        incididunt ut labore et dolore farhanaliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+        
+                <div class="box">
+                    <div class="user">
+                        <img src="./image/1641352654_219_Hinh-anh-gai-xinh-Chau-Au-My-xinh-dep-hut.jpg" alt="">
+                        <div class="info">
+                            <h2>jenna bey</h2>
+                            <span>happ client</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temor 
+                        incididunt ut labore et dolore farhanaliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+        
+                <div class="box">
+                    <div class="user">
+                        <img src="./image/1641352657_631_Hinh-anh-gai-xinh-Chau-Au-My-xinh-dep-hut.jpg" alt="">
+                        <div class="info">
+                            <h2>edward bey</h2>
+                            <span>happ client</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temor 
+                        incididunt ut labore et dolore farhanaliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+        
+                <div class="box">
+                    <div class="user">
+                        <img src="./image/2-1602929795-406-width650height813.jpg" alt="">
+                        <div class="info">
+                            <h2>lisa bey</h2>
+                            <span>happ client</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temor 
+                        incididunt ut labore et dolore farhanaliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+        
+                <div class="box">
+                    <div class="user">
+                        <img src="./image/toeyprim_65474287_924775737861610_2493158126543853287_n.jpg" alt="">
+                        <div class="info">
+                            <h2>edward bey</h2>
+                            <span>happ client</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temor 
+                        incididunt ut labore et dolore farhanaliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+        
+                <div class="box">
+                    <div class="user">
+                        <img src="./image/Anh-gai-xinh-chau-Au-My.jpg" alt="">
+                        <div class="info">
+                            <h2>lalisa bey</h2>
+                            <span>happ client</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temor 
+                        incididunt ut labore et dolore farhanaliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+            </section>
+        </div>
+    </div>
+        <!-- ----Footer -->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h2>Quick links</h2>
+                    <a href="#"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>Shop</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>About</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>Review</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>Blog</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>Contact</a>
+                </div>
+    
+                <div class="box">
+                    <h2>Extra links</h2>
+                    <a href="#"><i class="fas fa-arrow-right"></i>My order</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>My favorite</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>My wishlist</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>My account</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>Terms or use</a>
+                </div>
+    
+                <div class="box">
+                    <h2>Follow us</h2>
+                    <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+                    <a href="#"><i class="fab fa-pinterest"></i>Pinterest</a>
+                </div>
+    
+                <div class="box">
+                    <h2>Donate</h2>
+                    <p>Subscribe forlatest update</p>
+                    <!-- <form action="">
+                        <input type="email" placeholder="Enter your email address">
+                        <button><a href="">Subscribe</a></button>
+                    </form>
+                    <img src="" class="payments" alt=""> -->
+    
+                    <div class="pay">
+                        <img src="./image/349221.png" alt="" class="img-pay">
+                        <img src="./image/the-mastercard.png" alt="" class="img-master">
+                        <img src="./image/39022.png" alt="" class="img-pay">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    <script src="../work/weather-app-main/js/index.js"></script>
+    <script src="./js/view.js"></script>
+    <script src="./js/const.js"></script>
+    <script src="./js/model.js"></script>
+</body>
+</html>

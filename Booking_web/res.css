@@ -1,0 +1,209 @@
+@keyframes leftToRight {
+    form {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+    
+
+@media (max-width: 1000px) {
+    .header_top ul{
+        z-index: 1;
+        background-color: rgb(4, 35, 76);
+        width: 30%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: 63px;
+        display: block;
+        transform: translateX(-100%);
+        border-top-right-radius: 15px;
+        /* animation: leftToRight 5s infinite; */
+    } 
+    .header_top_container.active {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    .header_top ul.active{
+
+        transform: translateX(0);
+        transition: all 1s ease;
+    }
+    .header_top ul li {
+        text-align: left;
+        width: 100%;
+    }
+    .header_top ul li a {
+        margin-left:20px ;
+        color: rgb(236, 175, 45);
+    }
+    .header_top ul li a:hover {
+        padding: 0;
+        background: linear-gradient(to right, rgba(53, 53, 53, 0.8), rgba(245,245,245,0));;
+        color:  tomato;
+    }
+    .nav__mobile-close {
+        z-index: 999;
+    }
+    .nav__mobile-close {
+        transform: translateX(-100%,100%);
+    }
+    
+    .nav__mobile-close.active {
+        transform: translate(500%,-500%);
+        display: block;
+        transition: all 1s ease;
+        animation: fadeIn 2.3s linear;
+    }
+    
+}
+@media (max-width: 941px) {
+    .nav__mobile-close.active {
+        transform: translate(400%,-500%);
+    }
+}
+@media (max-width: 800px) {
+    .nav__mobile-close.active {
+        transform: translate(350%,-500%);
+        transition: all 0.7s ease;
+        animation: fadeIn 2.3s linear;
+    }
+}
+@media (max-width: 800px) {
+    .nav__mobile-close.active {
+        transform: translate(320%,-500%);
+        transition: all 0.7s ease;
+        animation: fadeIn 2.3s linear;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media (max-width: 760px) {
+    .nice-place-item {
+        width: 45%;
+    }
+    figcaption h2 {
+        font-size: 25px;
+
+    }
+    .review .box .user {
+        width: 100px;
+        height: 100px;
+    }
+    .review .box .user img {
+        width: 100%;
+        height: 100%;
+    }
+    .review .box .user h2 {
+        font-size: 25px ;
+    }
+    .review .box .user span {
+        display: none;
+    }
+    .review-container h2:nth-child(1)::before {
+        width: 80px;
+    }
+    .review .box p {
+        font-size: 15px;
+    }
+    .container-weather-box {
+        transform: translate(0%, 40%);
+    }
+}
+@media (max-width: 600px) {
+    .review .box .user {
+        width: 80px;
+        height: 80px;
+    }
+    .review .box .user img {
+        width: 90%;
+        height: 90%;
+    }
+    .review .box .user h2 {
+        font-size: 20px ;
+    }
+    .review .box .user span {
+        display: none;
+    }
+    .review-container h2:nth-child(1)::before {
+        width: 50px;
+    }
+    .review .box p {
+        font-size: 13px;
+    }
+
+    .container-weather-box {
+        width: 201px;
+    }
+}
+@media (max-width: 510px) {
+    .review .box .user {
+        width: 80px;
+        height: 80px;
+    }
+    .review .box .user img {
+        width: 70%;
+        height: 70%;
+    }
+    .review .box .user h2 {
+        font-size: 15px ;
+    }
+    .review .box .user span {
+        display: none;
+    }
+    .review-container h2:nth-child(1)::before {
+        width: 30px;
+    }
+    .review .box p {
+        font-size: 10px;
+    }
+    .btn-weather i {
+        transform: translateX(-14%);
+    }
+    
+}
+@media (max-width: 400px) {
+    .review .box .user {
+        width: 80px;
+        height: 80px;
+    }
+    .review .box .user img {
+        width: 70%;
+        height: 70%;
+    }
+    .review .box .user h2 {
+        font-size: 15px ;
+    }
+    .review .box .user span {
+        display: none;
+    }
+    .review-container h2:nth-child(1)::before {
+        width: 30px;
+    }
+    .review .box p {
+        font-size: 10px;
+    }
+    .btn-weather i {
+        transform: translateX(-125%);
+    }
+
+
+    .container-weather-box {
+        width: 301px;
+    }
+}

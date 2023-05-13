@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn-weather {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+.btn-weather i {
+    color: rgb(64, 77, 109);
+}
