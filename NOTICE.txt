@@ -1,8 +1,0 @@
-+thêm chức năng
-+thêm api đa dạng
-+phần weather giao diện ban đầu
-+load lại thì giữ giao diện
-			   -------+-------
-
-
-
